@@ -1,0 +1,39 @@
+<html>
+<head>
+    <title>
+        My first website.
+    </title>
+    <script src="https://cdnjs.cloudfare.com/ajax/libs/buzz/1.2.1/buzz.min.js"> </script>
+</head> 
+   <body style="background-color: coral;">
+<!-- 
+     <h1>
+      This is the main heading!
+     </h1>
+     <h2>
+       This is a subheading!
+    </h2>
+     <p> 
+      Here is a sentence
+    </p>
+    <p> here is another sentence <br> that continues on the next line!
+     </p>    
+        <img src="img/dolphin.webp" width="200" height="200"/>
+    --> 
+<img id="donut1" src="img/donut_01.png" width="190" height="190"/>
+<img id="donut2" src="img/donut_02.png" width="190" height="190"/>
+<img id="donut3" src="img/donut_03.png" width="190" height= "190"/> 
+    
+<script> 
+    var sound1 = new buzz.sound("sound/glitch1.mp3");
+    var sound2 = new buzz.sound("sound/glitch2.mp3");
+    var sound3 = new buzz.sound("sound/glitch3.mp3");
+
+ window.onload = function() {
+    document.getElementById('donut1').addEventListener('click', function () {sound1.play(); });
+    document.getElementById('donut2').addEventListener('click', function () {sound2.play(); });
+    document.getElementById('donut3').addEventListener('click', function () {sound3.play(); });
+}
+</script>
+     </body> 
+</html> 
